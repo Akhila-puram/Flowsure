@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "dc295d4d-6184-4426-98bd-5b64d40a8bdf",
+		"name": "Flowsure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21031708",
+		"_collection_link": "https://camunda-7983.postman.co/workspace/Camunda-Workspace~b1b020b8-74a2-415b-8cd8-c856f5cdc17b/collection/21031708-dc295d4d-6184-4426-98bd-5b64d40a8bdf?action=share&source=collection_link&creator=21031708"
+	},
+	"item": [
+		{
+			"name": "BPMN/DMN Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Sriram.Badeti/Downloads/CamundaBPMN.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/validate/upload-zip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"validate",
+						"upload-zip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DMN Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Sriram.Badeti/Downloads/DMN.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/validate/upload-dmn-zip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"validate",
+						"upload-dmn-zip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
